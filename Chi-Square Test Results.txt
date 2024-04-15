@@ -1,0 +1,71 @@
+# Cbal: Checking account balance
+# Result: X-squared = 123.72, df = 3, p-value < 2.2e-16
+
+# Cdur: Credit duration
+# Result: X-squared = 78.887, df = 32, p-value = 7.785e-06
+
+# Chist: Credit history
+# Result: X-squared = 61.691, df = 3, p-value = 2.558e-13
+
+# Cpur: Purpose of the loan
+# Result: X-squared = 33.356, df = 9, p-value = 0.000115
+
+# Camt: Loan Amount
+# Result: X-squared = 931.75, df = 920, p-value = 0.386
+
+# Sbal: Savings Balance
+# Result: X-squared = 36.099, df = 4, p-value = 2.761e-07
+
+# Edur: Employment Duration
+# Results: X-squared = 18.368, df = 4, p-value = 0.001045
+
+# InRate: Installment Rate
+# Result: X-squared = 5.4768, df = 3, p-value = 0.14
+
+# MSG: Marital Status and Gender
+# Result: X-squared = 9.6052, df = 3, p-value = 0.02224
+
+# Oparties: Other Parties Involved
+# Results : X-squared = 6.6454, df = 2, p-value = 0.03606
+
+# Rdur: Residence Duration
+# Results: X-squared = 0.7493, df = 3, p-value = 0.8616
+
+# Prop: Property Type
+# Result: X-squared = 23.72, df = 3, p-value = 2.858e-05
+
+# Age: Age
+# Results: X-squared = 57.477, df = 52, p-value = 0.2795
+
+# inPlans: Existing Plans
+# Result: X-squared = 12.839, df = 2, p-value = 0.001629
+
+# HType: Housing Type
+# Results: X-squared = 18.2, df = 2, p-value = 0.0001117
+
+# NumCred: Number of existing credits
+# Results: X-squared = 2.6712, df = 3, p-value = 0.4451
+
+# JobType: Job Type
+# Result: X-squared = 1.8852, df = 3, p-value = 0.5966
+
+# Ndepend: Number of Dependents
+# Results: X-squared = 0, df = 1, p-value = 1
+
+# telephone: Presence of a telephone
+# Results: X-squared = 1.1726, df = 1, p-value = 0.2789
+
+# foreign: Foreign worker status
+# Results: X-squared = 5.8216, df = 1, p-value = 0.01583
+
+
+
+-----------------
+
+
+After chi square test results for checking which features to include in our model we will do next 
+visualizations to show that which feature will be ordinal or nominal and which will we keep as is for model building.
+
+-----------
+Column 1 : Cbal | Checking Account Balance | Keep as factor with no ordering
+Column 2 : 
