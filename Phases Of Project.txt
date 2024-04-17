@@ -1,0 +1,201 @@
+What is a Prediction model in ML?
+Depicting the future based on the past data we have
+Prediction models rely on patterns and trends observed in historical data.
+By analyzing past behavior, these models identify regularities and relationships
+that can be used to predict future outcomes.
+
+------------
+Steps to build a Predictive Model
+
+1) Collect and Organize the Data
+Step Completed
+2) Clean the Dataset (clean, transform, and prepare your raw data for modeling)
+3) Choose an Algorithm/model
+Determine if a Regression or Classification MOdel suits the classification.
+Regression - If Numerical Output is needed of a specific variable 
+Classification - What class or category a data point belongs to output karna ho toh
+
+4) Build the model
+-----------------------------------
+
+
+1) Data Collection and Exploration:
+Import your dataset into R and Explore using head/summary and
+visualize it using packages like ggplot2
+2) Data Preprocessing
+->Handling Missing Values
+->Encoding Categorical Variables
+	(Feature Engineering and selection)
+->Feature Scaling/Normalization
+->Feature Engineering: Create new features or transform existing ones to capture more information from the data.
+->Handling Outliers
+->Data Sampling
+->Dimensionality Reduction: Reduce the number of features in the dataset while preserving most of the important information. 
+3) Splitting Data:
+Split your data into training and testing sets to evaluate your model's performance.
+You can use functions like createDataPartition() from caret or sample() to split the
+data randomly.
+4) Model Selection:
+Choose an appropriate algorithm for your problem (e.g., linear regression, decision trees,
+random forests, support vector machines, neural networks).
+Train multiple models and compare their performance using techniques like 
+cross-validation or grid search.
+
+5) Model Training:
+Use the training dataset to fit your chosen model. This typically involves 
+using functions like lm() for linear regression, randomForest() for random forests,
+svm() for support vector machines...etc.
+
+6)Model Evaluation:
+Evaluate your model's performance on the testing dataset using appropriate metrics
+(e.g., mean squared error for regression, accuracy, precision, recall, F1-score
+for classification).
+
+7) Visualize performance metrics using functions like confusionMatrix() 
+from the caret package or plotting libraries like ggplot2.
+
+8) Model Tuning:
+
+Fine-tune your model's hyperparameters to improve performance using techniques 
+like grid search or random search.
+
+9) Model Deployment:
+deploy it for predictions on new data
+
+
+----------------------------
+
+What is EDA?
+Examining and summarizing the main characteristics of the dataset to gain insights and identify patterns.
+
+
+
+
+Cbal - Ordinal Categorical Variable (done)
+Cdur - Numerical Variable having Natural Order hence no encoding needed (left)
+Chist(Credit History) - Ordinal Categorical Variable (left)
+POSSIBLE vALUES
+all settled till now
+dues not paid earlier 
+none taken/all settled
+all settled
+
+Cpur - Ordinal Categorical Variable 
+Possible Values:
+1)Business
+2)education
+3) new vehicle
+4)electronics
+5) renovation
+6) second hand vehicle
+7) miscellaneous
+8) furniture
+9) retaining
+10) domestic needs
+
+Camt (Loan amount) - Numerical Variable having Natural Order hence no encoding needed
+
+Sbal - Ordinal Categorical Variable
+Possible values:
+Rs. < 1000
+no savings account
+Rs. >= 10,000
+5000 <= Rs. < 10,000
+1000 <= Rs. < 5,000
+
+
+Edur (Employment duration) - Ordinal Categorical Variable
+Possible Values:
+1 to 4 years
+more than 7 years
+less than 1 year
+4 to 7 years
+not employed
+
+InRate (Installment rate) - Numerical Variable having Natural Order hence no encoding needed
+1,2,3,4
+
+*MSG (Marital status and gender) - nominal categorical variables
+[Ye nahi aara bhenchod]
+
+
+Oparties (Other parties involved) - nominal categorical variables
+no one
+yes, guarantor
+yes, co-applicant
+
+
+Rdur (Residence duration) - Ordinal Categorical Variable
+less than a year
+more than 3 years
+1 to 2 years
+2 to 3 years
+
+
+
+*Prop (Property type) - nominal categorical variables
+Possible Values:
+Prop
+real estate
+Unknown
+Other cars etc.
+life insurance/building society
+
+
+Age (Applicant's age) - nominal categorical variables
+
+*inPlans (Existing plans) - nominal categorical variables
+
+*Htype (Housing type)
+own
+free
+pays rent
+
+NumCred (Number of existing credits) - Numerical Variable having Natural Order hence no encoding needed
+
+JobType (Job type) - Ordinal Categorical Variable
+Possible Values:
+employee with official position
+employed either in management, self or in high position
+resident unskilled
+non resident either unemployed or  unskilled 
+
+
+Ndepend (Number of dependents) - Numerical Variable having Natural Order hence no encoding needed
+Possible Values:
+1
+2
+
+
+telephone (Presence of a telephone) - binary numeric variable
+
+foreign - Binary variable having Rank of No higher and Rank of Yes lower as foreign worker yes is a high risk entity.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
